@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-gray: hsl(234, 12%, 34%);
+    --grayish-gray: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+    height: 100vh;
+    background-color: #fafafa;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    padding: 0rem 2rem 0rem 2rem;
+    margin-top: -1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__title {
+    text-align: center;
+    color: var(--very-dark-gray);
+    font-weight: 200;
+}
+
+.header__title span {
+    display: block;
+    margin-top: -0.5rem;
+    font-weight: 600;
+}
+
+.header__subtitle {
+    font-size: 1em;
+    font-weight: 200;
+    text-align: center;
+    padding: 0 25rem;
+}
+
+/* ====== MAIN SECTION ====== */
+.main__section {
+    height: 60%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+    height: 16rem;
+    width: 26rem;
+
+    position: relative;
+    margin: 0.75rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.35rem;
+    box-shadow: 0 0.5rem 1rem var(--grayish-gray);
+}
+
+.card-2, .card-3 {
+    height: 100%;
+}
+
+.card-1 {
+    border-top: 0.2rem solid var(--cyan);
+}
+
+.card-2 {
+    border-top: 0.2rem solid var(--red);
+}
+
+.card-3 {
+    border-top: 0.2rem solid var(--orange);
+}
+
+.card-4 {
+    border-top: 0.2rem solid var(--blue);
+}
+
+.card__center {
+    height: 30rem;
+    width: 30rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--very-dark-gray);
+}
+
+.card__text {
+    padding-top: 0.5rem;
+    font-weight: 400;
+    color: var(--grayish-gray);
+}
+
+.card__image {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
