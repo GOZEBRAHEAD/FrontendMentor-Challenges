@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  background-color: #274472;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+.layout {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 4fr 1fr;
+  gap: 1rem;
+  place-items: center; }
+  .layout__header {
+    width: fit-content;
+    text-align: center;
+    margin-top: 1rem; }
+    .layout__header h1 {
+      font-size: 2.5em;
+      color: #e9ecef;
+      padding-bottom: 0.25rem;
+      border-bottom: 2px solid #5885AF; }
+    .layout__header h4 {
+      font-size: 1.1em;
+      color: #dee2e6;
+      margin-top: 1rem; }
+  .layout__content {
+    height: 100%;
+    width: 80%;
+    padding: 1rem;
+    overflow-x: none;
+    overflow-y: auto;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center; }
+    .layout__content__card {
+      height: 21rem;
+      width: 18rem;
+      background-color: #003049;
+      border-radius: 0.5rem;
+      box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.35);
+      user-select: none;
+      transition: all 0.2s ease-in-out; }
+      .layout__content__card:hover {
+        transform: translateY(-5px); }
+      .layout__content__card img {
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        width: 100%;
+        height: 50%; }
+      .layout__content__card__info {
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; }
+        .layout__content__card__info p {
+          font-size: 1.25em;
+          color: #e9ecef;
+          text-align: center; }
+        .layout__content__card__info a {
+          text-decoration: none;
+          color: #dee2e6;
+          padding: 0.75rem 2rem;
+          background-color: #41729F;
+          border-radius: 0.25rem;
+          transition: all 0.2s ease-in-out; }
+          .layout__content__card__info a:hover {
+            background-color: #5885AF; }
+  .layout__footer {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .layout__footer a {
+      font-size: 2rem;
+      color: #e9ecef;
+      transition: transform 0.2s linear; }
+      .layout__footer a:hover {
+        transform: translateY(-5px);
+        border-bottom: 2px solid #5885AF;
+        padding-bottom: 0.2rem; }
